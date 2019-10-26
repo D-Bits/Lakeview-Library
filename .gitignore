@@ -103,3 +103,5 @@ libraryenv/
 
 # mypy
 .mypy_cache/
+.vscode/settings.json
+lakeview_library/__pycache__/settings.cpython-37.pyc
