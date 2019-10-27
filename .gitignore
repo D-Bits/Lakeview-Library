@@ -24,6 +24,7 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+__pycache__/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -55,6 +56,7 @@ coverage.xml
 *.log
 local_settings.py
 db.sqlite3
+migrations/
 
 # Flask stuff:
 instance/
@@ -104,6 +106,9 @@ libraryenv/
 # mypy
 .mypy_cache/
 .vscode/settings.json
+lakeview_library/__pycache__/settings.cpython-37.pyc
+lakeview_library/__pycache__/settings.cpython-37.pyc
+lakeview_library/__pycache__/settings.cpython-37.pyc
 lakeview_library/__pycache__/settings.cpython-37.pyc
 lakeview_library/__pycache__/settings.cpython-37.pyc
 lakeview_library/__pycache__/settings.cpython-37.pyc
