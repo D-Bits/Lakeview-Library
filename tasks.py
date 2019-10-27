@@ -28,7 +28,7 @@ def add_app():
 
         input('App name cannot be null! Press enter to exit.')
 
-    run(['python', 'manage.py', 'startapp', app_name])
+    run(['py', 'manage.py', 'startapp', app_name])
 
 # Initialize a git repo, add, and commit files
 def git():
@@ -71,24 +71,24 @@ if __name__ == "__main__":
     u_choice = int(input('Execute a process, based on the above options: '))
 
     if u_choice == 1:
-        run(['python', 'manage.py', 'runserver'])
+        run(['py', 'manage.py', 'runserver'])
     elif u_choice == 2:
         app_name = input('Enter the name of the app that you want to do migrations for: ')
-        run(['python', 'manage.py', 'makemigrations', app_name])
-        run(['python', 'manage.py', 'migrate'])
+        run(['py', 'manage.py', 'makemigrations', app_name])
+        run(['py', 'manage.py', 'migrate'])
     elif u_choice == 3:
         add_app()
     elif u_choice == 4:
-        run(['python', 'manage.py', 'createsuperuser'])
+        run(['py', 'manage.py', 'createsuperuser'])
     elif u_choice == 5:
-        run(['python', 'manage.py', 'collectstatic'])
+        run(['py', 'manage.py', 'collectstatic'])
     elif u_choice == 6:
-        run(['python', 'manage.py', 'test', 'postings.tests'])
+        run(['py', 'manage.py', 'test', 'postings.tests'])
     elif u_choice == 7:
         run(['pip', 'freeze', '>', 'requirements.txt'])
     elif u_choice == 8:
         venv_name = input('Enter a name for your virutalenv: ')
-        run(['python', '-m', 'venv', venv_name], check=True)
+        run(['py', '-m', 'venv', venv_name], check=True)
     elif u_choice == 9:
         git()
     else:
