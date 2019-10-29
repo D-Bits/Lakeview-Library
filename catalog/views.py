@@ -34,7 +34,8 @@ class BookListView(ListView):
     model = Book
     context_object_name = 'book_list'
     queryset = Book.objects.all()
-    template_name = 'catalog/book_list.html' 
+    template_name = 'catalog/book_list.html'
+    paginate_by = 10 
 
 
 # For details of individual books
